@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Caculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="forms">
+                <input type="text" name="result_1" id="result" value=""></input>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <input type="button" name="a7" value="7" id="a7" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a8" value="8" id="a8" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a9" value="9" id="a9" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="aC" value="C" id="aC" onclick="onReset(this.value)"></input>
+                </div>
+                <div class="row">
+                    <input type="button" name="a4" value="4" id="a4" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a5" value="5" id="a5" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a6" value="6" id="a6" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a_multiply" value="*" id="a_multiply" onclick="onOpera('*')"></input>
+                </div>
+                <div class="row">
+                    <input type="button" name="a1" value="1" id="a1" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a2" value="2" id="a2" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a3" value="3" id="a3" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a_divide" value="/" id="a_divide" onclick="onOpera(this.value)"></input>
+                </div>
+                <div class="row">
+                    <input type="button" name="a_dot" value="." id="a_dot" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a0" value="0" id="a0" onclick="onNumber(this.value)"></input>
+                    <input type="button" name="a_plus" value="+" id="a_plus" onclick="onOpera(this.value)"></input>
+                    <input type="button" name="a_minus" value="-" id="a_minus" onclick="onOpera(this.value)"></input>
+                </div>
+                <div class="rows">
+                    <input type="button" name="a_equal" value="=" style="width: 300px" onclick="onEqual()"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="calculator.js"></script>
+
+</html>
