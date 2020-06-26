@@ -11,9 +11,10 @@ function onNumber(number) {
     if (number == '.' && dotAllow) {
         dotAllow = false;
     }
-
     currNumber = currNumber + number;
+
     onShow()
+
 };
 function onOpera(opera) {
     dotAllow = true;
@@ -69,7 +70,8 @@ function onShow() {
 }
 // bấm dấu bằng
 function onEqual() {
-
+    if (number === '.' && this.currNumber.includes('.')) return;
+    this.currNumber = this.currNumber.toString() + number.toString();
     isEqual = true;
     onOpera();
     preNumber = '';
